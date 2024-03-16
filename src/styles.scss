@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('./assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'CaviarDreams', Arial, Helvetica, sans-serif!important;
+}
