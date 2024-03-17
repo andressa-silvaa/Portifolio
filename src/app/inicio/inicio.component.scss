@@ -50,7 +50,6 @@
   display: flex;
   gap: 20px;
   justify-content: left;
-  padding-left: 50px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -67,20 +66,43 @@
 }
 
 .texto {
-  padding-left: 50px;
   width: 100%;
 }
+
 .div-textos{
   display: flex;
   flex-direction: column;
 }
+
 .row {
   width: 80%;
   margin: 0 auto;
+  padding: 0 15px;
 }
+
+@media (min-width: 200px) {
+  .texto p, .nome {
+    font-size: 1.2em;
+  }
+  .circle-container, .circle-container img {
+    width: 250px;
+    height: 250px;
+  }
+  .texto {
+    margin-top: 250px;
+  }
+}
+
 @media (min-width: 576px) {
   .texto p, .nome {
     font-size: 1.6em;
+  }
+  .circle-container, .circle-container img {
+    width: 350px;
+    height: 350px;
+  }
+  .texto {
+    margin-top: 300px;
   }
 }
 
@@ -89,8 +111,11 @@
     font-size: 1.6em;
   }
   .circle-container, .circle-container img {
-    width: 410px;
-    height: 410px;
+    width: 350px;
+    height: 350px;
+  }
+  .texto {
+    margin-top: 0px;
   }
 }
 
@@ -98,11 +123,15 @@
   .texto p, .nome {
     font-size: 1.6em;
   }
+
 }
 
 @media (min-width: 1200px) {
   .texto p, .nome {
     font-size: 1.7em;
+  }
+  .texto {
+    margin-top: 0px;
   }
 }
 

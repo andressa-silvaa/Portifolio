@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { ConquistasComponent } from './conquistas/conquistas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
@@ -14,7 +13,6 @@ import { SobreComponent } from './sobre/sobre.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    HomeComponent,
     ConquistasComponent,
     ContatoComponent,
     HabilidadesComponent,
