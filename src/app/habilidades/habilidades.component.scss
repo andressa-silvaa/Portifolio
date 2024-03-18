@@ -1,0 +1,87 @@
+.viewport-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #490075 url('../../assets/img/background.jpg') center / cover no-repeat;
+  z-index: -1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que o conteúdo exceda a viewport */
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  height: 500px; /* Ajusta conforme necessário */
+}
+
+.carousel-item {
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  align-items: center;
+  width: 5%;
+}
+
+.carousel-control-prev {
+  margin-left: -200px;
+}
+
+.carousel-control-next {
+  margin-right: -200px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+h1{
+  margin-bottom: -300px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner, .div-img {
+    flex-direction: column;
+  }
+  .carousel-item img {
+    height: 180px;
+
+  }
+  h1{
+    margin-bottom: -200px;
+  }
+  .carousel-inner {
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+}
