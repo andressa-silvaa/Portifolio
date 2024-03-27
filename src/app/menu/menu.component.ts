@@ -9,4 +9,9 @@ import { Component, Input } from '@angular/core';
 })
 export class MenuComponent {
   @Input() fundoTransparente: boolean = false;
+  isMenuCollapsed = true;
+
+  toggleMenu() {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
 }

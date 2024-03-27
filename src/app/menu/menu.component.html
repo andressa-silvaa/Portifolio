@@ -1,8 +1,8 @@
 
-<nav [class.fundo-roxo]="!fundoTransparente" [class.fundo-transparente]="fundoTransparente" class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+<nav id="meuNav" [class.margin-bottom-expanded]="!isMenuCollapsed" [class.fundo-roxo]="!fundoTransparente" [class.fundo-transparente]="fundoTransparente" class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
   <div class="container-fluid">
     <a class="navbar-brand active" href="#">Início</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
