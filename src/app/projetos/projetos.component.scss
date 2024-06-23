@@ -1,0 +1,120 @@
+.viewport-cover {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  max-height: 50vh;
+  width: auto;
+  margin-top: -300px;
+}
+h1{
+  color: #490075;
+  font-weight: bolder;
+  font-size: 3em;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1s ease-in-out forwards;
+}
+.carousel-inner img {
+  max-height: 100%;
+  margin: auto;
+}
+.carousel-inner {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.btn{
+  background-color: #490075;
+  border: none;
+}
+.carousel-control-prev-icon {
+  background-image: url('../../assets/img/prev.png');
+  height: 80PX;
+  width: 80px;
+}
+
+
+.carousel-control-next-icon {
+  background-image: url('../../assets/img/next.png');
+  height: 80PX;
+  width: 80px;
+}
+
+p{
+  text-align: justify;
+  max-width: 90%;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.div-personalizada {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+@media (max-width: 768px) {
+  .div-personalizada {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    max-height: 40vh;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .carousel-inner img {
+    max-height: 150px;
+    margin: auto;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .carousel {
+    max-height: 70vh; /* Reduz a altura do carrossel para telas menores */
+  }
+  h1 {
+    font-size: 2em; /* Reduz o tamanho do título para telas menores */
+  }
+  p {
+    max-width: 90%; /* Reduz a largura máxima do parágrafo para telas menores */
+    font-size: 0.8em; /* Reduz o tamanho do texto para telas menores */
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 60px; /* Reduz o tamanho dos ícones de navegação para telas menores */
+    width: 60px;
+  }
+  .carousel-inner img {
+    max-height: 250px;
+    margin: auto;
+  }
+}
+

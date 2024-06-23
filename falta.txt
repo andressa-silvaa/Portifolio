@@ -1,0 +1,7 @@
+- arrumar menu, de forma que ele ocupe espaço em outros componentes como se fosse parte da tela
+- arrumar espaçamento entre menu e rota
+- refazer tela habilidades
+- arrumar responsividade geral
+- terminar tela projetos
+- arrumar conexão entre os componentes de forma que a´pareçam todos juntos na landing page
+- criar uma tela para o botao ver mais em projetos

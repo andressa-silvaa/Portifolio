@@ -1,1 +1,58 @@
-<p>contato works!</p>
+<div class="viewport-cover">
+  <div class="container fluid" style="margin: 0px!important; padding: 0px!important;height: 100vh;">
+    <div class="row" style="margin: 0px!important; padding: 0px!important; height: auto;">
+      <h1>Contato</h1>
+    </div>
+    <div class="row" style="margin-top: 100px;">
+      <div class="col-md-6 col-12 justify-content-center">
+        <h2>Se interessou?</h2>
+        <p style="margin: 20px 0;">
+          Obrigada por ter chegado até aqui e conhecido um pouco da minha trajetória. Seria um prazer poder compartilhar mais sobre mim e adquirir experiência enfrentando desafios no Desenvolvimento Web. Tenho o interesse também de explorar novas áreas no campo da programação. Se você estiver em busca de alguém dedicado e com fome por aprendizado ficaria honrada em ter essa oportunidade. Sinta-se à vontade para entrar em contato e juntos transformarmos ideias em realidade.
+        </p>
+        <div class="row">
+          <div class="col-2 d-flex justify-content-start align-items-center">
+            <img src="../../assets/img/pessoa.png" alt="ícone pessoa" style="max-height: 48px; max-width: 48px;">
+          </div>
+          <div class="col-10" style="text-align: left;">
+            <h3>Nome</h3>
+            <p>Andressa Silva</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex justify-content-start align-items-center">
+            <img src="../../assets/img/telefone.png" alt="ícone whatsapp" style="max-height: 48px; max-width: 48px;">
+          </div>
+          <div class="col-10" style="text-align: left;">
+            <h3>Whatsapp</h3>
+            <p><a href="https://wa.me/5562986436602" target="_blank">(62) 9 8643-6602</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex justify-content-start align-items-center">
+            <img src="../../assets/img/e-mail.png" alt="ícone E-mail" style="max-height: 48px; max-width: 48px;">
+          </div>
+          <div class="col-10" style="text-align: left;">
+            <h3>E-mail</h3>
+            <p><a href="mailto:andressa.2003abc@gmail.com" target="_blank">andressa.2003abc&#64;gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 justify-content-center">
+        <h2>Fale comigo</h2>
+        <form #emailForm="ngForm" (ngSubmit)="sendEmail(emailForm)" >
+          <!-- Inputs do formulário aqui -->
+          <input type="text" class="input-sm" name="nome" placeholder="Nome*" [(ngModel)]="form.nome" required/>
+          <input type="email" class="input-sm" name="email" placeholder="E-mail*" [(ngModel)]="form.email" required/>
+          <input type="text" class="input-lg" name="assunto" placeholder="Assunto*" [(ngModel)]="form.assunto" required/>
+          <textarea class="input-xl" name="mensagem" placeholder="Mensagem*" [(ngModel)]="form.mensagem" required></textarea>
+          <div class="d-flex justify-content-start align-items-center" style="width: 100%!important;">
+            <button type="submit">Enviar <img src="../../assets/img/pajamas_long-arrow.svg" alt=""></button>
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>

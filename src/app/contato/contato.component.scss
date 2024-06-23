@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.viewport-cover {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-6 {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #490075;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 90px; /* Ajuste padrão */
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1.3s ease-in-out forwards;
+}
+
+h2 {
+  color: #490075;
+  text-align: left;
+  font-weight: bold;
+  font-size: 2.2em;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1.3s ease-in-out forwards;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1.3s ease-in-out forwards;
+}
+
+p {
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+input,textarea {
+  border: 1px solid #490075;
+  margin: 20px 20px 20px 0;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.input-sm {
+  height: 40px;
+  width: 46%;
+}
+
+.input-lg {
+  height: 40px;
+  width: 95%;
+}
+
+.input-xl {
+  height: 100px;
+  width: 95%;
+}
+
+button {
+  background-color:#490075;
+  color: white;
+  font-weight: bolder;
+  text-align: left;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1400px) {
+
+  button {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  button {
+    margin-top: 10px;
+  }
+
+  .input-sm, .input-lg, .input-xl {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+
+  button {
+    margin-top: 100px;
+  }
+}
+
+  @media only screen and (max-width: 765px) {
+
+    .input-sm, .input-lg, .input-xl {
+      width: 100%;
+    }
+    button{
+      margin-top: 10px;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }

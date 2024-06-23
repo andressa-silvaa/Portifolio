@@ -4,9 +4,9 @@ import { ConquistasComponent } from './conquistas/conquistas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { MenuComponent } from './menu/menu.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @Component({
   selector: 'app-root',
@@ -17,9 +17,9 @@ import { SobreComponent } from './sobre/sobre.component';
     ContatoComponent,
     HabilidadesComponent,
     InicioComponent,
-    MenuComponent,
     ProjetosComponent,
-    SobreComponent
+    SobreComponent,
+    HomepageComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
