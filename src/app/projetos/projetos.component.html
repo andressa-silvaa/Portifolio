@@ -11,15 +11,207 @@
               <div class="row align-items-center">
                 <div class="col-md-6">
                   <div class="text-center">
-                    <img src="../../assets/img/projeto-spotify.png" class="img-fluid" alt="Projeto Spotify">
+                    <img src="../../assets/img/projeto-spotify.png" class="img-fluid" alt="Projeto spotify">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="text-center text-md-start div-personalizada">
-                    <p class="text-md d-none d-md-block">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error mollitia sapiente obcaecati sequi maxime ad, cumque ullam facere! Dolore officiis quod explicabo ratione consequatur earum. Tempore consectetur voluptate natus nostrum.
+                    <h2>Projeto spotify</h2>
+                    <p class="text-md d-none d-md-block" id="textoSpotify">
+                      Este é um projeto clone do Spotify que foi desenvolvido como parte do aprendizado em desenvolvimento web. O objetivo era aprimorar minhas habilidades em HTML, CSS e responsividade utilizando o Bootstrap.
                     </p>
-                    <button class="btn btn-primary">Ver mais</button>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/spotify','https://spotify-pxzq.onrender.com/','textoSpotify')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/api-pdv.png" class="img-fluid" alt="Projeto api pdv-fabric">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto api pdv-fabric</h2>
+                    <p class="text-md d-none d-md-block" id="textoApiPdv">
+                      Este projeto consiste em uma API para um PDV (Ponto de Venda) ou Frente de Caixa, desenvolvida como parte do desafio de conclusão do curso da Cubos Academy. A API é construída em Node.js, usando PostgreSQL como banco de dados e seguindo os princípios de uma API REST.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/pdv-fabric','','textoApiPdv')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/url-shortner.png" class="img-fluid" alt="Projeto encurtador de url">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto encurtador de url</h2>
+                    <p class="text-md d-none d-md-block" id="textoUrlShortner">
+                      Este projeto é um encurtador de URLs full stack, desenvolvido com HTML, CSS, Bootstrap, e Node.js, utilizando um banco de dados relacional para armazenar URLs e gerenciar redirecionamentos.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/url-shortener','https://teste-6qgf.onrender.com/','textoUrlShortner')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/mata-mosquito.png" class="img-fluid" alt="Projeto mata-mosquito">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto mata-mosquito</h2>
+                    <p class="text-md d-none d-md-block" id="textoMataMosquito">
+                      Este é um jogo que foi desenvolvido como parte do aprendizado em desenvolvimento web. O objetivo era aprimorar minhas habilidades em JavaSCript de forma divertida.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/mata-mosquito','https://mata-mosquito.onrender.com/','textoMataMosquito')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/homepage.png" class="img-fluid" alt="Projeto homepage">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto homepage</h2>
+                    <p class="text-md d-none d-md-block" id="textoHomePage">
+                      Este é um projeto de landing page que foi desenvolvido como parte do aprendizado em desenvolvimento web, aprimorando habilidades em HTML, CSS e JavaSCript.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/HomePage','https://home-page-vaej.onrender.com/','textoHomePage')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/ia-report.png" class="img-fluid" alt="Projeto ia-report">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto ia-report</h2>
+                    <p class="text-md d-none d-md-block" id="textoIaReport">
+                      Este projeto foi desenvolvido como parte de um estudo sobre redes neurais, utilizando a linguagem Python devido à sua facilidade de manipulação dessas redes através de bibliotecas especializadas.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/IA-Report','','textoIaReport')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/cerrado.png" class="img-fluid" alt="Projeto estrutura de dados - cerrado">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto estrutura de dados - cerrado</h2>
+                    <p class="text-md d-none d-md-block" id="textoCerrado">
+                      Este é um programa em Java que combina uma interface gráfica interativa, um CRUD (Create, Read, Update, Delete) e a implementação de três algoritmos de ordenação: Bubble Sort, Insertion Sort e Quick Sort.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/data-structure-cerrado','','textoCerrado')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/asp-net.png" class="img-fluid" alt="Projeto gerenciamento ASP NET">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto gerenciamento ASP NET</h2>
+                    <p class="text-md d-none d-md-block" id="textoAspNet">
+                      Este projeto foi desenvolvido durante o curso de formação C# por Nélio Alvesa. Esse sistema consiste em gerenciamento de vendas e departamentos, utilizando o poderoso framework ASP.NET Core com padrão MVC e Razor.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/Projeto-C--Nelio','','textoAspNet')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/ban-api.png" class="img-fluid" alt="Projeto bank api">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto bank api</h2>
+                    <p class="text-md d-none d-md-block" id="textoBankApi">
+                      Este projeto é uma API desenvolvida em Node.js que gerencia operações bancárias básicas. Ela se conecta a um banco de dados PostgreSQL chamado "dindin" e oferece um conjunto abrangente de recursos para o gerenciamento de contas bancárias.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/BankAPI-Node','','textoBankApi')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/cart-race.png" class="img-fluid" alt="Projeto cart race">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto cart race</h2>
+                    <p class="text-md d-none d-md-block" id="textoCartRace">
+                      Este é um projeto Java que implementa um sistema de corrida de carrinhos. O programa permite que o usuário insira novos carrinhos e os respectivos tempos cronometrados de cada volta da corrida. Os tempos de cada volta são armazenados em uma tabela no banco de dados MySQL e utilizados para calcular o ranking da corrida.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/cart-race-system-java','','textoCartRace')">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <img src="../../assets/img/Despesas.png" class="img-fluid" alt="Projeto despesas">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center text-md-start div-personalizada">
+                    <h2>Projeto despesas</h2>
+                    <p class="text-md d-none d-md-block" id="textoDespesas">
+                      Este projeto consiste em uma ferramenta simples para acompanhar despesas diárias sem complicações. Essa aplicação utiliza HTML, CSS e JavaScript, com armazenamento no próprio navegador web para manter tudo organizado e acessível.
+                    </p>
+                    <button class="btn btn-primary" (click)="openModal('#modal-ver-mais','https://github.com/andressa-silvaa/Despesas-Rep','https://despesas-rep.onrender.com/consulta.html ','textoDespesas')">Ver mais</button>
                   </div>
                 </div>
               </div>
@@ -36,6 +228,25 @@
           </button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+<!--MODAL DETALHES-->
+<div id="modal-ver-mais" uk-modal style="margin-top: 50px;">
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">Informações do Projeto</h2>
+    </div>
+    <div class="uk-modal-body">
+      <p class="responsive-text">{{texto}}</p>
+      <p><i class="fas fa-link"></i> Link repositório:    <a href={{linkRep}} target="_blank"> Repositório</a></p>
+      <p *ngIf="linkApp != ''"><i class="fas fa-link"></i> Link da aplicação:    <a href={{linkApp}} target="_blank">      Aplicação</a></p>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Fechar</button>
     </div>
   </div>
 </div>

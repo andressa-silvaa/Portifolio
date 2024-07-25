@@ -7,12 +7,20 @@
 .carousel {
   max-height: 50vh;
   width: auto;
-  margin-top: -300px;
+  margin-top: -500px;
 }
 h1{
   color: #490075;
   font-weight: bolder;
   font-size: 3em;
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(5px);
+  animation: fade-in 1s ease-in-out forwards;
+}
+.div-personalizada h2{
+  color: #490075;
+  font-weight: bolder;
   opacity: 0;
   transform: translateY(20px);
   filter: blur(5px);
@@ -42,7 +50,9 @@ h1{
   height: 80PX;
   width: 80px;
 }
-
+.responsive-text {
+  display: none;
+}
 p{
   text-align: justify;
   max-width: 90%;
@@ -57,10 +67,22 @@ p{
 }
 
 .div-personalizada {
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
 }
-
+.uk-modal-footer  button{
+  background-color: #490075;
+  color: white;
+  font-weight:600;
+}
+.uk-modal-body  a{
+  color: #490075;
+  font-weight:700;
+  text-decoration: none;
+}
+.uk-modal-body  a:hover{
+  font-size: 1.3em;
+}
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -115,6 +137,9 @@ p{
   .carousel-inner img {
     max-height: 250px;
     margin: auto;
+  }
+  .responsive-text {
+    display: block;
   }
 }
 
